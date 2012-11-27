@@ -1,0 +1,17 @@
+{
+"app_id" : "moodlemobile",
+"cache_expiration_time" : 300000,
+"default_lang" : "en",
+"plugins" : ["notifications", "upload", "contents", "participants", "addcontact", "addnote", "sendmessage"],
+"wsservice" : "moodle_mobile_app",
+"presets" : {"url": "http://localhost/moodle11", "username": ""},
+"sync_ws_on" : true,
+"sync_lang_on" : true,
+"sync_css_on" : true,
+"sync_cron": 30000,
+"sync_ws" : 300000,
+"sync_css" : 3600000,
+"sync_lang" : 3600000,
+"log_length" : 20,
+"dev_debug": true
+}
