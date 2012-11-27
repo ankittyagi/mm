@@ -4,7 +4,7 @@
 "default_lang" : "en",
 "plugins" : ["notifications", "upload", "contents", "participants", "addcontact", "addnote", "sendmessage"],
 "wsservice" : "moodle_mobile_app",
-"presets" : {"url": "http://localhost/moodle11", "username": ""},
+"presets" : {"url": "http://localhost/moodle11", "username": "admin"},
 "sync_ws_on" : true,
 "sync_lang_on" : true,
 "sync_css_on" : true,
