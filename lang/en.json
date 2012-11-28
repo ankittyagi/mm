@@ -125,5 +125,8 @@
 "erroruploading": "Error uploading file",
 "fileuploaded": "File uploaded",
 "loadcordovaemulator": "Load Cordova emulator",
-"generalsettings": "General settings"
+"generalsettings": "General settings",
+"profile": "My Profile",
+"viewprofile": "View"
+"department": "Department"
 }

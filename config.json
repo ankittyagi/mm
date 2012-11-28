@@ -2,7 +2,7 @@
 "app_id" : "moodlemobile",
 "cache_expiration_time" : 300000,
 "default_lang" : "en",
-"plugins" : ["notifications", "upload", "contents", "participants", "addcontact", "addnote", "sendmessage"],
+"plugins" : ["notifications", "upload", "contents", "participants", "addcontact", "addnote", "sendmessage","profile"],
 "wsservice" : "moodle_mobile_app",
 "presets" : {"url": "http://localhost/moodle11", "username": "admin"},
 "sync_ws_on" : true,
