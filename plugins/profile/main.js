@@ -35,12 +35,9 @@ define(templates,function (profileTpl) {
             };
             
             MM.moodleWSCall('moodle_user_get_users_by_id', data, function(users) {
-			//alert("hello");
-			
                 var tpl = {users: users, deviceType: MM.deviceType,"user": users.shift()};
                 var html = MM.tpl.render(MM.plugins.profile.templates.profile.html, tpl);
-                MM.panels.show('center', html);
-                
+                MM.panels.show('center', html);  
             });
            },
 		
@@ -51,7 +48,6 @@ define(templates,function (profileTpl) {
            },
        }
 	}
-	 
- 
+	  
     MM.registerPlugin(plugin);
 });
