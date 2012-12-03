@@ -18,7 +18,7 @@ define(function () {
             ["upload/take", "upload_take", "takeMedia"],
             ["upload/record", "upload_record", "recordAudio"],
         ],
-       
+        
         browseAlbums: function() {
             MM.log("Upload: Trying to get a image frr albums");
             MM.panels.html("center", "");
@@ -35,14 +35,14 @@ define(function () {
             MM.panels.html("center", "");
             MM.panels.html("right", "");
             navigator.camera.getPicture(MM.plugins.upload.photoSuccess, MM.plugins.upload.photoFails, {
-               quality: 50,
+                quality: 50,
                 destinationType: navigator.camera.DestinationType.FILE_URI
             });
         },
         
         recordAudio: function() {
             MM.log("Upload: Trying to record and Audio");
-           MM.panels.html("center", "");
+            MM.panels.html("center", "");
             MM.panels.html("right", "");
             navigator.device.capture.captureAudio(MM.plugins.upload.recordAudioSuccess, MM.plugins.upload.recordAudioFails, {limit: 1});
         },
@@ -53,7 +53,7 @@ define(function () {
                 <div id="camera-image" style="background-size:100%;min-height:250px"></div>\
                 <button id="bupload" type="button">' + MM.lang.s("upload") + '</button>\
             ';
-           MM.panels.show("center", html);
+            MM.panels.show("center", html);
             MM.panels.html("right", "");
             
             $('#camera-image').css({
@@ -76,9 +76,9 @@ define(function () {
                                     function(){ MM.popErrorMessage(MM.lang.s("erroruploading")) }
                 );       
             });            
-       },
+        },
         
-        photoFails: function() { 
+        photoFails: function() {
             MM.log("Upload: Error trying getting a photo");
             MM.popErrorMessage(MM.lang.s("errorcamera"));
         },
@@ -103,8 +103,7 @@ define(function () {
         
         recordAudioFails: function() {
             MM.popErrorMessage(MM.lang.s("audionotavailable"));
-        } 
-	
+        }
     }
     
     MM.registerPlugin(plugin);

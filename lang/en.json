@@ -1,7 +1,7 @@
 {"connectedto": "Connected to: %@",
 "turnonautosync": "Send data immediately when online",
 "turnoffautosync": "Turn off auto sync",
-"login": "Login",
+"add": "Add",
 "about": "About",
 "audio": "Audio",
 "albumpicture": "Album picture",
@@ -125,8 +125,17 @@
 "erroruploading": "Error uploading file",
 "fileuploaded": "File uploaded",
 "loadcordovaemulator": "Load Cordova emulator",
-"generalsettings": "General settings",
+"general": "General",
+"purgecaches": "Purge caches",
+"allcachespurged": "All caches purged",
+"cacheexpirationtime": "Cache expiration time (seconds)",
+"forcelangsync": "Force lang sync now",
+"forcecsssync": "Force css sync now",
+"empty": "empty",
+"showall": "Show all",
 "profile": "My Profile",
 "viewprofile": "View",
-"department": "Department"
+"department": "Department",
+"editprofile": "Edit",
+"login": "Login"
 }

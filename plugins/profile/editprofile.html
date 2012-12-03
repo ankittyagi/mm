@@ -1,4 +1,3 @@
-
 	<div class="user-card">
         <div class="content">
 			<figure class="imagen">
@@ -6,17 +5,20 @@
 			</figure>
 					
 					<ul class="user-data">
-		
+						<div align="center">Click the Values to Edit.</div>
 					<% var fields = ["username","fullname", "email", "city", "country", "description","phone1","phone2","department"]; %>
-					<table>
-					<% _.each(fields, function(field) { %>
-					<% if (user[field]) { %>
-					<tr ><li><td width="60%"><strong><% print(MM.lang.s(field)); %></td><td> <% print(user[field]); %></td>
-					</li></tr>
+					<table >
+						<% _.each(fields, function(field) { %>
+						<% if (user[field]) { %>
+					<tr><li>
+						<td width="60%"><strong><% print(MM.lang.s(field)); %></td>
+						<td> <div class="transbox" style="opacity:0.4;"><input type="text"  style="border: none" value="<% print(user[field]); %>"></div> </td>
+						</li>
+					</tr>
 					<% } %>
 					<% }); %>
 					</table>
-					<a href="#profile/editprofile"><div style="float:right"><button>Edit Profile</button></div></a>
+					
 					</ul>
 				
         </div>
