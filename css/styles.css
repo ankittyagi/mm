@@ -729,3 +729,7 @@ form div.error {
   color: red;
   display: none;
 }
+.loading-icon {
+  text-align: center;
+  margin: auto;
+ }
