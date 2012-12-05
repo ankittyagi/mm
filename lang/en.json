@@ -134,9 +134,18 @@
 "empty": "empty",
 "showall": "Show all",
 "uploading": "Uploading",
+"contentyetnotavailable": "This type of activity is not yet available in the mobile app.  Visit the activity in the web site",	
+"filenotsyncyet": "File not synchronized yet (not local copy available)",
+"downloadremotefile": "Download remote file",
+"filename" : "File name",	
+"fileurl" : "File url",
+"author": "Author",
+"license": "License",
+"openlocalcopy": "Open the local copy of the file",
 "profile": "My Profile",
 "viewprofile": "View",
 "department": "Department",
 "editprofile": "Edit",
-"login": "Login"
+"login": "Login",
+"profileupdated": "Profile Updated"
 }

@@ -14,6 +14,7 @@
     <script src="externallib/jquery.touchSwipe.min.js"></script>
     <script src="externallib/md5.js"></script>
     <script src="externallib/matchMedia.js"></script>
+	<script src="externallib/matchMedia.addListener.js"></script>
     <script src="externallib/underscore.js"></script>
     <script src="externallib/backbone.js"></script>
     <script src="externallib/backbone-localstorage.js"></script>
@@ -65,10 +66,12 @@
 <script type="text/template" id="menu_template">
 <header>
         <div class="media">
+		<a href="#profile/viewprofile" style="color:rgb(255, 253, 253)";>
                 <div class="img"><img src="<%= user.profileimageurl %>"></div>
                 <div class="bd">
-                    <h1><%= user.fullname %></h1>
+                    <h1 ><%= user.fullname %></h1>
                 </div>
+		</a>
             </div>
         </header>
 

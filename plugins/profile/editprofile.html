@@ -12,14 +12,13 @@
 						<% if (user[field]) { %>
 					<tr><li>
 						<td width="60%"><strong><% print(MM.lang.s(field)); %></td>
-						<td> <div class="transbox" style="opacity:0.4;"><input type="text"  style="border: none" value="<% print(user[field]); %>"></div> </td>
+						<td> <div class="transbox" style="opacity:0.4;"><input type="text"  onclick="this.value=''"style="border: none" value="<% print(user[field]); %>"></div> </td>
 						</li>
 					</tr>
 					<% } %>
 					<% }); %>
 					</table>
-					
-					</ul>
-				
+						<a href="#profile/updateprofile"><div style="float:right"><button>Update</button></div></a>
+					</ul>		
         </div>
     </div>

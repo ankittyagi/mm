@@ -1,7 +1,6 @@
+Steps to follow :
+Enable web services in your moodle (latest)
+Provide the path of your moodle in config.json file
+login with username and password. 
 
-steps
-==
-1. install moodle in htdocs by an name 'moodle11'
-2. make some courses and students and assign the courses to student.
-3. login with admin whatever password you provided .
-moodle mobile practice
+Moodle mobile practice
