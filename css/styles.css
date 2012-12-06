@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  color: #666666;
+  color: rgb(57, 99, 148);
   font-family: Helvetica, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
@@ -150,16 +150,16 @@ textarea {
 
 button,
 html input[type="button"] {
-  background: #fa8f1c;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fa8f1c), color-stop(100%, #de7505));
-  background-image: -webkit-linear-gradient(top, #fa8f1c 0%, #de7505 100%);
-  background-image: -moz-linear-gradient(top, #fa8f1c 0%, #de7505 100%);
-  background-image: -ms-linear-gradient(top, #fa8f1c 0%, #de7505 100%);
-  background-image: -o-linear-gradient(top, #fa8f1c 0%, #de7505 100%);
-  background-image: linear-gradient(top, #fa8f1c 0%, #de7505 100%);
-  border: 1px solid #ac5b04;
+  background: rgb(55, 122, 175);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(45, 139, 168)), color-stop(100%, rgb(51, 140, 182)));
+  background-image: -webkit-linear-gradient(top, rgb(46, 148, 187) 0%, rgb(48, 147, 194) 100%);
+  background-image: -moz-linear-gradient(top, rgb(46, 126, 180) 0%, rgb(53, 139, 187) 100%);
+  background-image: -ms-linear-gradient(top, rgb(60, 149, 184) 0%, rgb(44, 132, 202) 100%);
+  background-image: -o-linear-gradient(top, rgb(47, 140, 177) 0%, rgb(46, 149, 197) 100%);
+  background-image: linear-gradient(top, rgb(61, 148, 197) 0%, rgb(73, 126, 184) 100%);
+  border: 1px solid rgb(42, 124, 179);
   border-radius: 0.30769rem;
-  box-shadow: 0 1px 0 #fcc080 inset;
+  box-shadow: 0 1px 0 rgb(55, 120, 180) inset;
   color: #fff;
   font-size: 16px;
   font-size: 1rem;
@@ -394,7 +394,8 @@ ol {
 /* - user-menu
 -------------------------------------------------------------------------- */
 .panel.user-menu {
-  background-color: #fa8f1c;
+  background-color: rgb(81, 151, 184);
+  background: rgb(48, 141, 177) url(../img/orange-bg.png);
   color: #fff;
   font-size: 12px;
   font-size: 0.875rem;
@@ -409,10 +410,10 @@ ol {
   font-size: 1.25rem;
 }
 .panel.user-menu h2 {
-  background: rgba(240, 130, 10, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0 20px 40px -10px rgba(160, 70, 0, 0.3) inset;
+  background: rgba(36, 106, 124, 0.3);
+  border-top: 1px solid rgba(5, 4, 4, 0.2);
+  border-bottom: 1px solid rgba(47, 103, 129, 0.15);
+  box-shadow: 0 20px 40px -10px rgba(11, 77, 99, 0.3) inset;
   font-size: 14px;
   font-size: 0.875rem;
   margin: 0;
@@ -454,14 +455,16 @@ ol {
 .user-menu .user-options .network .ir {
   background-image: url(../img/ico-network.png);
   background-position: 20% center;
+  border-bottom: 1px solid rgba(47, 103, 129, 0.15);  box-shadow: 0 20px 40px -10px rgba(11, 77, 99, 0.3) inset;
 }
 .user-menu .user-options .help .ir {
   background-image: url(../img/ico-help.png);
-  background-position: center;
+  background-position: center;  border-bottom: 1px solid rgba(47, 103, 129, 0.15);  box-shadow: 0 20px 40px -10px rgba(11, 77, 99, 0.3) inset;
 }
 .user-menu .user-options .settings .ir {
   background-image: url(../img/ico-settings.png);
   background-position: 80% center;
+  border-bottom: 1px solid rgba(47, 103, 129, 0.15);  box-shadow: 0 20px 40px -10px rgba(11, 77, 99, 0.3) inset;
 }
 
 /* - .content-index
