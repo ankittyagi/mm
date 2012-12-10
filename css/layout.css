@@ -55,9 +55,11 @@ body {
 }
 
 .user-menu  .user-options {
-	background: #FA8F1C url(../img/orange-bg.png);
 	height: 40px;
 	width: 100%;
+	border-top: 1px solid rgba(7, 7, 7, 0);  
+	border-bottom: 1px solid rgba(105, 97, 97, 0.69);  
+	box-shadow: 0 20px 40px -10px rgba(255, 255, 255, 0.62) inset;
 }
 
 #mycourses {
