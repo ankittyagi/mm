@@ -9,12 +9,7 @@ define(templates,function (profileTpl,profileTp2) {
             name: "profile",
             type: "general",
 			menuURL: "#profile/viewprofile",
-			//subMenus: [
-              //  {name: "viewprofile", menuURL: "#profile/viewprofile", icon: "plugins/profile/profile.png"},
-             // {name: "editprofile", menuURL: "#profile/editprofile", icon: "plugins/profile/profile.png"},
-              
-         //   ],
-            lang: {
+		    lang: {
                 component: "core"
             }
         },
@@ -53,8 +48,7 @@ define(templates,function (profileTpl,profileTp2) {
         
 		   },
 		editProfile: function() {
-		// alert("editprofile");
-			 var siteid=MM.config.current_site.id;
+			var siteid=MM.config.current_site.id;
 			 var site = MM.db.get("sites", siteid);
 			 var userid= site.get('userid');
             MM.panels.showLoading('center');
@@ -67,7 +61,7 @@ define(templates,function (profileTpl,profileTp2) {
                 "userids[0]" : userid 
             };
             
-            MM.moodleWSCall('moodle_user_get_users_by_id', data, function(users) {    // local_usersget_getuser_by_id 
+            MM.moodleWSCall('moodle_user_get_users_by_id', data, function(users) {   
 			    var tpl = {users: users, deviceType: MM.deviceType,"user": users.shift()};
                 var html = MM.tpl.render(MM.plugins.profile.templates.editprofile.html, tpl);
                 MM.panels.show('center', html);  
@@ -77,43 +71,27 @@ define(templates,function (profileTpl,profileTp2) {
            },
 		   
 		 updateProfile: function() {
-			
-		// alert("updateprofile");
 		  
 			 var siteid=MM.config.current_site.id;
 			 var site = MM.db.get("sites", siteid);
 			 var userid= site.get('userid');
 			MM.panels.showLoading('center');
+			
+			// Just updating constant email right now for all users
+			
 			var data =
 			{
 			"users[0][id]" : userid
-			//"users[0][email]" : 'anky@localhost.com',
-			/*
-			"users[0][username]": string
-			"users[0][password]":string
-			"users[0][firstname]": string
-			"users[0][lastname]": string
-			"users[0][email]": string
-			"users[0][auth]": string
-			"users[0][idnumber]": string
-			"users[0][lang]": string
-			"users[0][theme]": string
-			"users[0][timezone]": string
-			"users[0][mailformat]": int
-			"users[0][description]": string
-			"users[0][city]": string
-			"users[0][country]": string
-			"users[0][customfields][0][type]": string
-			"users[0][customfields][0][value]": string
-			"users[0][preferences][0][type]": string
-			"users[0][preferences][0][value]": string				
-			*/
+			"users[0][email]" : 'anky@localhost.com',
 			};
 			// web service not working still finding the BUG
-		//	MM.moodleWSCall('core_user_update_users', data, function(){
-			  // MM.popMessage(MM.lang.s("profileupdated"));  	  
-		//	});
-			alert("Not working still finding the BUG ");
+			/*
+			MM.moodleWSCall('core_user_update_users', data, function(){
+			   MM.popMessage(MM.lang.s("profileupdated"));  	  
+			});
+			*/
+			
+			  MM.popMessage(MM.lang.s("Not working still finding the BUG"));   
 				MM.Router.navigate("profile/viewprofile");
 				setInterval(location.reload(),3000);
 				

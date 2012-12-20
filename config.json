@@ -4,7 +4,7 @@
 "default_lang" : "en",
 "plugins" : ["notifications", "upload", "contents", "participants", "addcontact", "addnote", "sendmessage", "profile"],
 "wsservice" : "moodle_mobile_app",
-"presets" : {"url": "http://mm.ballisticlearning.com/mm/", "username": "student"},
+"presets" : {"url": "http://localhost/moodle11/", "username": "student"},
 "sync_ws_on" : true,
 "sync_lang_on" : true,
 "sync_css_on" : true,
