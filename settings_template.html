@@ -1,0 +1,23 @@
+<script type="text/template" id="settings_template">
+    <div class="settings-list">
+        <ul class="nav nav-v">
+            <li class="nav-item" style="display:none">
+                <a href="#settings/sites/" class="menu1"><%= MM.lang.s("sites") %><br></a>
+            </li>
+            <li class="nav-item">
+                <a href="#settings/general/" class="menu1"><%= MM.lang.s("general") %><br></a>
+            </li>
+            <li class="nav-item">
+                <a href="#settings/sync/" class="menu1"><%= MM.lang.s("synchronization") %><br></a>
+            </li>
+            <li class="nav-item">
+                <a href="#settings/development/" class="menu1"><%= MM.lang.s("development") %><br></a>
+            </li>
+            <% _.each(plugins, function(plugin) { %>
+            <li class="nav-item">
+                <a href="#settings/plugin.menuURL" class="menu1"><%= MM.lang.s(plugin.name) %><br></a>
+            </li>          
+            <% }); %>
+        </ul>
+    </div>
+</script>

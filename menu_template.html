@@ -1,0 +1,85 @@
+
+<script type="text/template" id="menu_template">
+	<header>
+			<div class="media">
+			<!--<a href="#profile/viewprofile" style="color:rgb(255, 253, 253)";> -->
+					<div class="img"><img src="<%= user.profileimageurl %>"></div>
+					<div class="bd">
+						<h1 ><%= user.fullname %></h1>
+					</div>
+			<!-- </a> -->
+			</div>
+	</header>
+
+	<ul class="nav nav-v js-accordion">
+		<% _.each(plugins, function(plugin) { %>
+
+		<% if (typeof plugin.subMenus == "undefined" || plugin.subMenus.length == 0) { %>
+		<li class="nav-item no-submenu">
+			<a href="<%= plugin.menuURL %>" rel="external"  class="alink">
+				<span class="plugin-ico"><img src="<%= plugin.icon %>" border="0"></span>
+				<%= MM.lang.s(plugin.name) %>
+			</a>
+		</li>
+		<% } else { %>
+		<li class="nav-item">
+			<a href="" class="toogler">
+				<span class="plugin-ico"><img src="<%= plugin.icon %>" border="0"></span>
+				<%= MM.lang.s(plugin.name) %>
+			</a>
+			<ul class="nav submenu">
+				<% _.each(plugin.subMenus, function(menu) { %>
+				<li class="nav-item">
+					<a href="<%= menu.menuURL %>" rel="external"  class="alink"  >
+						<span class="plugin-ico"><img src="<%= menu.icon %>" border="0"></span>
+						<%= MM.lang.s(menu.name) %>
+					</a>
+				</li>
+				<% }); %>
+			</ul>
+		</li>
+		<% } %>
+		<% }); %>
+	</ul>
+
+	<h2><%= MM.lang.s("mycourses") %></h2>
+	<div id="mycourses">
+		<ul class="nav nav-v js-accordion">
+			<% _.each(courses, function(course) { %>
+			<li class="nav-item">
+				<a href="#" class="toogler">
+					<span class="course-ico"><img src="img/ico-course.png" border="0"></span>
+					<%= course.fullname %>
+				</a>
+				<ul class="nav submenu">
+					<% _.each(coursePlugins, function(plugin) { %>
+					<li class="nav-item">
+						<a href="<%= plugin.menuURL %><%= course.id %>"  rel="external">
+							<span class="plugin-ico"><img src="<%= plugin.icon %>" border="0"></span>
+							<%= MM.lang.s(plugin.name) %>
+						</a>
+					</li>
+					<% }); %>
+				</ul>
+			</li>
+			<% }); %>
+		</ul>
+		<ul class="nav user-options">
+			<li class="nav-item no-submenu network">
+				<a href="<%= siteurl%>" rel="external" target="_blank" class="ir">
+					<!-- Network -->
+				</a>
+			</li>
+			<li class="nav-item no-submenu help">
+				<a href="http://docs.moodle.org/" rel="external" target="_blank" class="ir">
+				  <!--  Help -->
+				</a>
+			</li>
+			<li class="nav-item no-submenu settings">
+				<a href="#settings" class="ir">
+				   <!-- settings -->
+				</a>
+			</li>
+		</ul>
+	</div>
+</script>

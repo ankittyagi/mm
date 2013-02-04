@@ -42,6 +42,7 @@
 "message": "Message",
 "calendar": "Calendar",
 "upload": "Upload",
+"Uplaoding": "Uploading",
 "participants": "Participants",
 "attendance": "Attendance",
 "poll": "Poll",
@@ -147,5 +148,7 @@
 "department": "Department",
 "editprofile": "Edit",
 "login": "Login",
-"profileupdated": "Profile Updated"
+"profileupdated": "Profile Updated",
+"therearenotnotificationsyet": "NO Notifications ( Settings->Developement->Add fake Notification )",
+"airnotifier_url": "http://notify.moodle.net:8801/tokens/"
 }
